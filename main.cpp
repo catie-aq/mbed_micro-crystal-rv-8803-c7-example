@@ -20,7 +20,7 @@
 using namespace sixtron;
 
 namespace {
-#define PERIOD_MS 1000
+#define PERIOD_MS 2000
 }
 
 static DigitalOut led1(LED1);
@@ -29,12 +29,12 @@ static RV_8803_C7 rtc(&i2c);
 
 time_t read_rtc(void)
 {
-	return rtc.get_time();
+    return rtc.get_time();
 }
 
 void write_rtc(time_t time)
 {
-	rtc.set_time(time);
+    rtc.set_time(time);
 }
 
 
@@ -50,6 +50,8 @@ int main()
         if (led1) {
             printf("Alive!\n");
         }
+
+        // Get time with standard function, which is retrieved from the RTC
         time_t seconds = time(NULL);
         printf("Time as a basic string = %s", ctime(&seconds));
 
