@@ -42,8 +42,9 @@ void write_rtc(time_t time)
 // (note the calls to ThisThread::sleep_for below for delays)
 int main()
 {
-    //attach_rtc(callback(&rtc, &RV_8803_C7::get_time), callback(&rtc, &RV_8803_C7::set_time), NULL, NULL);
     attach_rtc(read_rtc, write_rtc, NULL, NULL);
+
+    //set_time(1578306642); // set time to Monday 6 January 2020 10:30:42 GMT
 
     while (true) {
         led1 = !led1;

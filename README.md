@@ -1,31 +1,33 @@
-# RTC_RV-8803-C7
-A short description of the project
+# RTC_RV-8803-C7 Example
+
+Example usage of the Zest RTC RV-8803-C7 board with Mbed OS.
 
 ## Requirements
 ### Hardware requirements
 The following boards are required:
 
-- *List RTC_RV-8803-C7 hardware requirements here*
+- A [Zest Core](https://member.6tron.io/fr/m/ressources/plateforme-materielle/cartes-zest-core/)
+- Zest_RTC_RV-803-C7
 
 ### Software requirements
 RTC_RV-8803-C7 makes use of the following libraries (automatically imported
 by `mbed deploy` or `mbed import`):
 
-- *List RTC_RV-8803-C7 software requirements here*
+- [RTC_RV-8803-C7](https://gitlab.com/catie_6tron/rtc_rv-8803-c7.git)
 
 ## Usage
 To clone **and** deploy the project in one command, use `mbed import` and skip to the
 target and toolchain definition:
 
 ```shell
-mbed import https://gitlab.com/catie_6tron/rtc_rv-8803-c7.git rtc_rv-8803-c7
+mbed import https://gitlab.com/catie_6tron/rtc_rv-8803-c7-example.git rtc_rv-8803-c7
 ```
 
 Alternatively:
 
 - Clone to "rtc_rv-8803-c7" and enter it:
   ```shell
-  git clone https://gitlab.com/catie_6tron/rtc_rv-8803-c7.git rtc_rv-8803-c7
+  git clone https://gitlab.com/catie_6tron/rtc_rv-8803-c7-example.git rtc_rv-8803-c7
   cd rtc_rv-8803-c7
   ```
 
